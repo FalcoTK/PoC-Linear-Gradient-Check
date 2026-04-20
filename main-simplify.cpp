@@ -73,7 +73,7 @@ bool GradientCheck(int index1, int index2) {
     ChessPiece piece1 = getPieceData(index1);
     ChessPiece piece2 = getPieceData(index2);
 
-    if (piece1.pos.y - piece2.pos.y == 0 && piece1.pos.x - piece2.pos.x == 0) {
+    if (piece1.pos.y - piece2.pos.y == 0 || piece1.pos.x - piece2.pos.x == 0) {
         return true;
     };
     return false;
